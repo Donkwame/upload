@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:upload/New%20Car/newcar.dart';
 import 'package:upload/Store/store.dart';
 import 'package:upload/upload/upload.dart'; // Assuming this is the correct path to your Upload page
 
@@ -60,6 +61,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Go to Store Page'),
+            ),
+
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NewCar()),
+                );
+              },
+              child: const Text('DV uploade'),
             ),
           ],
         ),
